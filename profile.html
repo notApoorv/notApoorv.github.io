@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+    #myPhoto
+    {
+        border-radius: 10px;
+        
+        width:85%;
+        height:auto;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right:auto;
+        border:2px solid rgb(255, 255, 255);
+        
+    }
+
+    #nameCard
+    {
+        width:220px;
+        height:420px;
+        border:1px solid rgb(255, 255, 255);
+        transition:all .15s ease-in-out;
+        background:linear-gradient(45deg,rgb(224, 217, 224),rgb(196, 189, 189));
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgb(218, 211, 211);
+
+    }
+
+    #nameCard:hover
+    {
+        transform:scale(1.015);
+    }
+
+    #aboutCard
+    {
+        width:500px;
+        height:400px;
+        margin-left: 6px;
+        border:1px solid rgb(255, 255, 255);
+        transition:all .15s ease-in-out;
+        background:linear-gradient(45deg,rgb(224, 217, 224),rgb(196, 189, 189));
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgb(218, 211, 211);
+    }
+
+    #aboutCard:hover
+    {
+        transform:scale(1.015);
+    }
+
+    #aboutCard,#nameCard,#BPGC,#skillz,#interests
+    {
+        display:inline-block;
+        
+        vertical-align: top;
+    }
+
+    #name
+    {
+        font-family:IBM Plex Sans;
+        text-align: center;
+        color: rgb(63, 63, 63);
+    }
+
+    #glink
+    {
+        font-family:IBM Plex Sans;
+        text-align: center;
+        color: rgb(63, 63, 63);
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    #glink:hover
+    {
+        color:rgb(36, 41, 46);
+    }
+
+    #llink
+    {
+        font-family:IBM Plex Sans;
+        text-align: center;
+        color:  rgb(63, 63, 63);
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 20px;
+        margin-top:10px
+    }
+
+    #llink:hover
+    {
+        color:rgb(0, 119, 181);
+    }
+
+    #info
+    {
+        font-family:IBM Plex Sans;
+        color: rgb(63, 63, 63);
+        margin-left: 20px;
+        margin-top:2px;
+    }
+
+    #fn
+    {
+        font-size: 22px;
+        font-family:IBM Plex Sans;
+        color: rgb(63, 63, 63);
+        margin-left: 20px;
+        margin-top:2px;
+    }
+
+    body
+    {
+        background-image: url(https://i.ibb.co/JCtNJ9X/gplaypattern.png);
+        background-position: center center;
+    }
+
+    #BPGC
+    {
+        width:750px;
+        height:165px;
+        margin-left: 6px;
+        border:1px solid rgb(255, 255, 255);
+        transition:all .15s ease-in-out;
+        background-image:linear-gradient(to left,transparent,white),url(https://i.ibb.co/nmtBwY1/Banner-campus.png) ;
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgb(218, 211, 211);
+    }
+
+    #BPGC:hover
+    {
+        transform:scale(1.015);
+    }
+
+    #BPGCtext
+    {
+        margin-left:10px;
+        font-family: IBM Plex Sans;
+        font-size: 20px;
+        color: rgb(63, 63, 63);
+    }
+
+    #skillz
+    {
+        width:400px;
+        height:350px;
+        margin-top: 6px;
+        border:1px solid rgb(255, 255, 255);
+        transition:all .15s ease-in-out;
+        background:linear-gradient(45deg,rgb(224, 217, 224),rgb(196, 189, 189));
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgb(218, 211, 211);
+    }
+
+    #skillz:hover
+    {
+        transform:scale(1.015);
+    }
+
+    #skillChart
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table,th,td
+    {
+        font-family: IBM Plex Sans;
+        font-size: 20px;
+        color:rgb(63, 63, 63);
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+
+    #intTit
+    {
+        font-family: IBM Plex Sans;
+        font-size: 30px;
+        color:rgb(63, 63, 63);
+        margin-left:20px;
+    }
+
+    #interests
+    {
+        margin-top: -10px;
+        width:400px;
+        height:350px;
+        margin-left: 6px;
+        border:1px solid rgb(255, 255, 255);
+        transition:all .15s ease-in-out;
+        background:linear-gradient(45deg,rgb(224, 217, 224),rgb(196, 189, 189));
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgb(218, 211, 211);
+    }
+
+    #interests:hover
+    {
+        transform:scale(1.015);
+    }
+
+    li.ele
+    {
+        font-family: IBM Plex Sans;
+        font-size: 22px;
+        color:rgb(63, 63, 63);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+
+<body>
+    <div id="nameCard">
+        <img src="https://i.ibb.co/Y0mCXKP/pp.jpg" alt="picture" border="0" id="myPhoto">
+
+        <h1 id="name">Apoorv Singh</h1>
+
+        <a href="https://github.com/notApoorv" target="_blank" id="glink">Github Profile</a>
+
+        <a href="https://www.linkedin.com/in/apoorv-singh-a343001aa/" target="_blank" id="llink">LinkedIn Profile</a>
+    </div>
+
+    <div id="aboutCard">
+        <h1 id="info">INFO:</h1>
+
+        <h1 id="fn">First Name:&nbsp;&nbsp;&nbsp;Apoorv</p>
+        <h1 id="fn">Last Name:&nbsp;&nbsp;&nbsp;Singh</p>
+        <h1 id="fn">DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13/09/1999</p>
+        <h1 id="fn">E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;apoorvsingh.main@gmail.com</p>
+        <h1 id="fn">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6388287339</h1>
+        <h1 id="fn">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gorakhpur</h1>
+        <h1 id="fn">Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India</h1>
+    </div>
+
+    <a href="https://www.bits-pilani.ac.in/goa/" target="_blank">
+        <div id="BPGC">
+            <h1 id="BPGCtext">
+                Currently Studying at <br/> Birla Institute of <br/>Science and Technology,<br/>Goa
+            </h1>
+        </div>
+    </a>
+
+    <div id="skillz">
+        <h1 id="skillHead" style="font-family:IBM Plex Sans;color:rgb(63, 63, 63);margin-left: 20px;">Skills:</h1>
+
+        <table id="skillChart" >
+            <tr>
+                <th class="tableh">Skill</th>
+                <th class="tableh">Proficiency</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>Swing/AWT</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Moderate</td>
+            </tr>
+            
+            <tr>
+                <td>Data Science</td>
+                <td>Elementary</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="interests">
+        <h1 id="intTit">Interests:</h1>
+        <ul id="list">
+            
+            <li class="ele">Cloud Computing</li>
+            <li class="ele">Front-End Web Development</li>
+            <li class="ele">GUI/Software Development</li>
+            <li class="ele">Blockchain/Cryptocurrency</li>
+            <li class="ele">Database Systems</li>
+            <li class="ele">Sports/Fitness</li>
+            <li class="ele">Schools of Philosophy</li>
+            <li class="ele">Electronic Music</li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>

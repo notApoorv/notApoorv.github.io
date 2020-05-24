@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+    #background 
+    {
+        background-image:url('https://i.ibb.co/B4dpyvB/bruh.jpg');
+        opacity: 0.07;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% top;
+        background-attachment: fixed;
+        position:fixed;
+         height: 100vh;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -10000;
+    }
+
+    #justice
+    {
+        z-index: 10001;
+        height:auto;
+        width:25vw;
+        margin-top:75px;
+    }
+
+    #DP
+    {
+        z-index: 10002;
+        height:auto;
+        width:25vw;
+        margin-top:75px;
+    }
+
+    #dm5
+    {
+        z-index: 10003;
+        height:auto;
+        width:25vw;
+        margin-top:75px;
+    }
+
+    #skrillex
+    {
+        z-index: 10004;
+        height:auto;
+        width:25vw;
+        margin-top:75px;
+    }
+
+    #justice:hover
+    {
+        transform: scale(1.05);
+    }
+
+    #dm5:hover
+    {
+        transform: scale(1.05);
+    }
+
+    #DP:hover
+    {
+        transform: scale(1.05);
+    }
+
+    #skrillex:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .column 
+    {
+        float: left;
+        width: 25%;
+        padding: 0px;
+    }
+
+    
+    .row::after 
+    {
+        content: "";
+        clear: both;
+        display: table;
+    } 
+
+    #chart
+    {
+        border-radius: 5px;
+        width: 100%;
+        
+        
+        float: none;
+        margin-top:50px;
+    }
+    
+
+    #NB
+    {
+        font-family: Roboto Condensed;
+        z-index: 10000;
+        
+    }
+
+    .navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 60px;
+    }
+    .navbar {min-height:20px !important;}
+
+
+    #Logo
+    {
+        margin-top: 10px;
+        transform: scale(1.5);
+        margin-left: 15px;
+    }
+
+    @media all and (min-width: 1025px) 
+    {
+        #NBText
+        {
+            font-size: 40px;
+            margin-top: -45px;
+            margin-left:10px
+            
+        }
+    }
+
+    @media not all and (min-width: 1025px) 
+    {
+        #NBText
+        {
+            font-size: 20px;
+            margin-top: -30px;
+            margin-left:40px
+            
+        }
+    }   
+
+    #back
+    {
+        position: fixed;
+        bottom:10px;
+        right:10px;
+        opacity:0.6;
+    }
+
+    
+    
+
+</style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Chart</title>
+  </head>
+  <body>
+
+    <div id="background"></div>
+
+    
+    
+    <nav class="navbar fixed-top navbar-light bg-light" id="NB">
+        <a class="navbar-brand" href="#">
+          <img src="https://i.ibb.co/ZKCWLNN/interface.png" width="30" height="30" alt="" loading="lazy" id="Logo">
+          <p id="NBText" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOST INFLUENTIAL ELECTRONIC ALBUMS OF ALL TIME</p>
+          </a>
+    </nav>
+
+    <div class="row">
+        <div class="column" id="justicediv">
+            <img src="https://i.ibb.co/T4FXB1S/51zey-YKXFWL-SL1200.jpg" alt="justice" border="0" id="justice">
+        </div>
+        <div class="column" id="DPdiv">
+            <img src="https://i.ibb.co/1m2MhYz/61-Uxg-SWEx-L-AC-SL1500.jpg" alt="DP" border="0" id="DP">
+        </div>
+        <div class="column" id="dm5div">
+            <img src="https://i.ibb.co/NV9d7Sv/R-2586994-1291859283-jpeg.jpg" alt="dm5" border="0" id="dm5">
+        </div>
+        <div class="column" id="skrillexdiv">
+            <img src="https://i.ibb.co/8YSK2QJ/R-3299789-1326211487-jpeg.jpg" alt="skrillex" border="0" id="skrillex">
+        </div>
+    </div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+    <table class="table table-striped table-bordered table-responsive" id="chart">
+        <thead>
+            <tr>
+                <th scope="col">Album Name</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Year</th>
+                <th scope="col" class="d-none d-lg-table-cell">Duration</th>
+                <th scope="col">Label</th>
+                <th scope="col" class="d-none d-lg-table-cell">Genre</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cross</td>
+                <td>Justice</td>
+                <td>2007</td>
+                <td class="d-none d-lg-table-cell">48:13</td>
+                <td>Vice</td>
+                <td class="d-none d-lg-table-cell">French House</td>
+              </tr>
+              <tr>
+                <td>Random Access Memories</td>
+                <td>Daft Punk</td>
+                <td>2013</td>
+                <td class="d-none d-lg-table-cell">1:14:24</td>
+                <td>Columbia</td>
+                <td class="d-none d-lg-table-cell">Disco</td>
+              </tr>
+              <tr>
+                <td>4 X 4=12</td>
+                <td>Deadmau5</td>
+                <td>2010</td>
+                <td class="d-none d-lg-table-cell">1:16:01</td>
+                <td>Mau5trap</td>
+                <td class="d-none d-lg-table-cell">Progressive House</td>
+              </tr>
+              <tr>
+                <td>Bangarang</td>
+                <td>Skrillex</td>
+                <td>2011</td>
+                <td class="d-none d-lg-table-cell">30:08</td>
+                <td>OWSLA</td>
+                <td class="d-none d-lg-table-cell">Dubstep</td>
+              </tr>
+              <tr>
+                <td>Play</td>
+                <td>Moby</td>
+                <td>1999</td>
+                <td class="d-none d-lg-table-cell">1:03:12</td>
+                <td>Mute</td>
+                <td class="d-none d-lg-table-cell">Downtempo</td>
+              </tr>
+              <tr>
+                <td>Exit Planet Dust</td>
+                <td>The Chemical Brothers</td>
+                <td>1995</td>
+                <td class="d-none d-lg-table-cell">49:28</td>
+                <td>Virgin</td>
+                <td class="d-none d-lg-table-cell">Electronica</td>
+              </tr>
+              <tr>
+                <td>Trans-Europe Express</td>
+                <td>Kraftwerk</td>
+                <td>1977</td>
+                <td class="d-none d-lg-table-cell">42:45</td>
+                <td>Kling Klang</td>
+                <td class="d-none d-lg-table-cell">Synth-Pop</td>
+              </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+<a href="login.html" button type="Submit" class="btn btn-dark" id="back">Go back to login page</a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
